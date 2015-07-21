@@ -1,4 +1,4 @@
-var db_name = 'phd_ponto';
+var db_name = 'presentationnode';
 // Bring Mongoose into the app
 var mongoose = require( 'mongoose' ),
 credentials = "admin:eYT1V7LArmf8",
