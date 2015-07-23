@@ -4,10 +4,8 @@ var Usuario = require('../repository/usuarios');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-	Usuario.find(function(err, data) {
-		if (err) {
-			console.error(err);
-		}
+	console.log("get usuarios");
+	Usuario.findAll().then(function(data) {
 		res.json(data);
 	});
 });
